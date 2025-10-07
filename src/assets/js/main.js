@@ -65,7 +65,7 @@ $(document).ready(function () {
   });
 
   var featuresOneSwiper = new Swiper(".features-one-slider", {
-    slidesPerView: 1.2, // show one full + part of the next
+    slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: false,
     loop: false,
@@ -82,15 +82,15 @@ $(document).ready(function () {
     grabCursor: true,
     breakpoints: {
       0: { // mobile
-        slidesPerView: 1.15,
+        slidesPerView: 'auto',
         spaceBetween: 15,
       },
       768: { // tablet
-        slidesPerView: 1.2,
+        slidesPerView: 'auto',
         spaceBetween: 20,
       },
       1200: { // desktop
-        slidesPerView: 1.3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
       },
     },
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 
   var featuresTwoSwiper = new Swiper(".features-two-slider", {
-    slidesPerView: 1.2, // show two full + part of the next
+    slidesPerView: 'auto',
     spaceBetween: 20,
     centeredSlides: false,
     loop: false,
@@ -115,22 +115,22 @@ $(document).ready(function () {
     grabCursor: true,
     breakpoints: {
       0: { // mobile
-        slidesPerView: 1.15,
+        slidesPerView: 'auto',
         spaceBetween: 15,
       },
       768: { // tablet
-        slidesPerView: 1.2,
+        slidesPerView: 'auto',
         spaceBetween: 20,
       },
       1200: { // desktop
-        slidesPerView: 1.3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
       },
     },
   });
 
   var proofMobileSwiper = new Swiper(".proofSwiper", {
-    slidesPerView: 1.15,
+    slidesPerView: 'auto',
     spaceBetween: 20,
     loop: false,
     navigation: {
