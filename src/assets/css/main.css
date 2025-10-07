@@ -125,9 +125,7 @@ table {
   color: var(--color-white) !important;
 }
 
-.header:not(.scrolled) .navbar-toggler-icon {
-  filter: invert(1);
-}
+/* Removed invert filter - using yellow color directly */
 
 .header .navbar .logo-img {
   opacity: 1;
