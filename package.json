@@ -1,0 +1,18 @@
+{
+  "name": "everwash-landing-page",
+  "version": "1.0.0",
+  "description": "EverWash landing page built with Eleventy",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "dev": "eleventy --serve --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1"
+  }
+}
