@@ -1549,8 +1549,18 @@ table {
   .footer-bottom {
     flex-direction: column;
     padding-top: 0;
-    gap: 8px;
+    gap: 20px;
     text-align: center;
+  }
+
+  .footer-bottom a,
+  .footer-bottom span {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom a:last-child {
+    margin-bottom: 0;
   }
 }
 
