@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -37,6 +38,7 @@ body {
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img,
@@ -996,6 +998,11 @@ table {
     background-size: cover;
     background-position: center;
     color: var(--color-white);
+    overflow-x: hidden;
+  }
+
+  .proof-mobile .container {
+    overflow-x: hidden;
   }
 
   .proof-mobile .section-heading {
@@ -1011,19 +1018,21 @@ table {
 
   /* Swiper Slide Styles */
   .proofSwiper {
-    overflow: visible;
-    margin-right: calc(-100vw + 100% + 15px);
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 15px;
   }
 
   .proofSwiper .swiper-wrapper {
-    overflow: visible;
+    padding-left: 0;
   }
 
   .proofSwiper .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85vw;
+    width: calc(100vw - 80px);
     max-width: 361px;
   }
 

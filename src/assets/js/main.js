@@ -161,8 +161,9 @@ $(document).ready(function () {
 
   var proofMobileSwiper = new Swiper(".proofSwiper", {
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 16,
     loop: false,
+    centeredSlides: false,
     navigation: {
       nextEl: '.proof-mobile-navigation .swiper-button-next',
       prevEl: '.proof-mobile-navigation .swiper-button-prev',
