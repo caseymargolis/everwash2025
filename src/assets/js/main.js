@@ -82,11 +82,11 @@ $(document).ready(function () {
     grabCursor: true,
     breakpoints: {
       0: { // mobile
-        slidesPerView: 1,
+        slidesPerView: 1.15,
         spaceBetween: 15,
       },
       768: { // tablet
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         spaceBetween: 20,
       },
       1200: { // desktop
@@ -115,11 +115,11 @@ $(document).ready(function () {
     grabCursor: true,
     breakpoints: {
       0: { // mobile
-        slidesPerView: 1,
+        slidesPerView: 1.15,
         spaceBetween: 15,
       },
       768: { // tablet
-        slidesPerView: 1,
+        slidesPerView: 1.2,
         spaceBetween: 20,
       },
       1200: { // desktop
@@ -130,7 +130,7 @@ $(document).ready(function () {
   });
 
   var proofMobileSwiper = new Swiper(".proofSwiper", {
-    slidesPerView: 1,
+    slidesPerView: 1.15,
     spaceBetween: 20,
     loop: false,
     navigation: {

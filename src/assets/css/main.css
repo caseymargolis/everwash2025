@@ -815,7 +815,12 @@ table {
 
   .features-one-slider,
   .features-two-slider {
-    overflow: hidden;
+    overflow: visible;
+  }
+
+  .features-one-slider .swiper-wrapper,
+  .features-two-slider .swiper-wrapper {
+    overflow: visible;
   }
 
   .features .features-btn-group {
@@ -835,6 +840,15 @@ table {
 
   .features-carousel {
     padding: 0 5px;
+    overflow: visible;
+  }
+
+  /* Allow slides to overflow on right side */
+  .features .swiper {
+    overflow: visible;
+  }
+
+  .features .swiper-wrapper {
     overflow: visible;
   }
 
@@ -960,6 +974,14 @@ table {
   }
 
   /* Swiper Slide Styles */
+  .proofSwiper {
+    overflow: visible;
+  }
+
+  .proofSwiper .swiper-wrapper {
+    overflow: visible;
+  }
+
   .proofSwiper .swiper-slide {
     display: flex;
     justify-content: center;
