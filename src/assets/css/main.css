@@ -1,13 +1,13 @@
 :root {
-  --color-primary: #141C52;
-  --color-secondary: #F3F183;
-  --color-cyan: #28D5CB;
-  --color-white: #FFFFFF;
+  --color-primary: #141c52;
+  --color-secondary: #f3f183;
+  --color-cyan: #28d5cb;
+  --color-white: #ffffff;
   --color-black: #222222;
-  --color-gray: #F8F8FF;
+  --color-gray: #f8f8ff;
 
-  --font-family-heading: "DM Sans", sans-serif;
-  --font-family-body: "DM Sans", sans-serif;
+  --font-family-heading: 'DM Sans', sans-serif;
+  --font-family-body: 'DM Sans', sans-serif;
 
   --border-radius: 10px;
 }
@@ -87,7 +87,6 @@ table {
   outline-offset: 2px;
 }
 
-
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -97,7 +96,6 @@ table {
     scroll-behavior: auto !important;
   }
 }
-
 
 /* Template CSS Start */
 
@@ -151,17 +149,16 @@ table {
 }
 
 .header .navbar .nav-link:hover {
-  color: #F3F183 !important;
+  color: #f3f183 !important;
 }
 
 .header .navbar .nav-link.active {
-  color: #F3F183 !important;
+  color: #f3f183 !important;
   position: relative;
 }
 
 /* Mobile Menu Fixes */
 @media (max-width: 991px) {
-
   /* Mobile menu background */
   .navbar-collapse {
     background: var(--color-primary);
@@ -256,7 +253,6 @@ table {
   }
 }
 
-
 /* Custom Buttons */
 .btn__primary {
   width: fit-content;
@@ -315,12 +311,10 @@ table {
   opacity: 1;
 }
 
-
 /* Hero Section */
 .hero {
   position: relative;
-  background:
-    linear-gradient(rgba(20, 28, 82, 0.9), rgba(20, 28, 82, 0.9)),
+  background: linear-gradient(rgba(20, 28, 82, 0.9), rgba(20, 28, 82, 0.9)),
     url('/assets/images/hero-bg.webp') center/cover no-repeat;
   color: var(--color-white);
   padding: 16rem 0 12rem;
@@ -344,7 +338,6 @@ table {
   line-height: 28px;
   text-align: center;
   vertical-align: middle;
-
 }
 
 .hero .btn-group {
@@ -404,7 +397,6 @@ table {
   width: 100%;
   height: 120px;
 }
-
 
 /* Testimonials Video Section */
 .testimonials-video {
@@ -602,7 +594,6 @@ table {
   transform: scale(1.2);
 }
 
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .testimonials-video {
@@ -726,7 +717,11 @@ table {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(20, 28, 82, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(20, 28, 82, 0) 100%
+  );
   padding: 30px 25px;
   color: white;
   transition: all 0.4s ease;
@@ -838,7 +833,6 @@ table {
 }
 
 @media (max-width: 768px) {
-
   .features.style-one,
   .features.style-two {
     padding: 20px 0;
@@ -989,7 +983,6 @@ table {
   display: none;
 }
 
-
 @media (max-width: 768px) {
   .proof-desktop {
     display: none;
@@ -1120,7 +1113,7 @@ table {
   .proof-mobile-pagination .swiper-pagination-bullet {
     width: 11px;
     height: 11px;
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     opacity: 1;
     transition: all 0.3s ease;
@@ -1167,15 +1160,11 @@ table {
     margin-top: 20px;
   }
 
-
   /* CTA button spacing */
   .proof-mobile .btn__secondary {
     font-size: 14px;
   }
-
 }
-
-
 
 /* testimonials Section */
 .testimonials {
@@ -1300,7 +1289,6 @@ table {
   }
 }
 
-
 /* Grow Revenue Section */
 .grow-revenue {
   background: var(--color-gray);
@@ -1399,7 +1387,6 @@ table {
   }
 }
 
-
 /* Footer Styles */
 .footer {
   background-image: url('/assets/images/footer-bg.png');
@@ -1430,9 +1417,10 @@ table {
 }
 
 .footer-description {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   line-height: 1.6;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .footer-menu {
@@ -1441,9 +1429,10 @@ table {
 
 .footer-title {
   color: var(--color-secondary);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -1457,11 +1446,12 @@ table {
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .footer-links a:hover {
@@ -1472,11 +1462,12 @@ table {
 .footer-social {
   display: flex;
   justify-content: center;
+  gap: 16px;
 }
 
 .footer-social .social-link {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: var(--color-secondary);
   display: flex;
@@ -1486,24 +1477,24 @@ table {
 }
 
 .footer-social .social-link i {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .footer-bottom {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   gap: 32px;
 }
 
-
 .footer-bottom a,
 .footer-bottom span {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease;
+  font-weight: 500;
 }
 
 .footer-bottom a:hover {
@@ -1554,7 +1545,6 @@ table {
     gap: 8px;
     text-align: center;
   }
-
 }
 
 /* Tablet Responsive */
@@ -1566,4 +1556,8 @@ table {
   .footer-brand {
     max-width: 100%;
   }
+}
+.mt-20,
+.pt-20 {
+  margin-top: 25px;
 }
