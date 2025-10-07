@@ -215,7 +215,7 @@ table {
     display: block;
     width: 100%;
     height: 2px;
-    background-color: var(--color-white);
+    background-color: var(--color-secondary);
     transition: all 0.3s ease;
   }
 
@@ -225,7 +225,7 @@ table {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--color-white);
+    background-color: var(--color-secondary);
     left: 0;
     transition: all 0.3s ease;
   }
@@ -241,7 +241,7 @@ table {
   .header.scrolled .navbar-toggler-icon,
   .header.scrolled .navbar-toggler-icon::before,
   .header.scrolled .navbar-toggler-icon::after {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
   }
 }
 
