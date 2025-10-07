@@ -532,6 +532,15 @@ table {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  background: #000;
+}
+
+.video-wrapper .video-thumbnail {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
 }
 
 .video-wrapper video {
@@ -540,7 +549,6 @@ table {
   object-fit: cover;
   display: block;
   border: none;
-  cursor: pointer;
 }
 
 /* Custom play button */
@@ -562,10 +570,13 @@ table {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
-/* Hide button when playing */
+/* Hide thumbnail and button when playing */
+.video-wrapper.playing .video-thumbnail {
+  display: none;
+}
+
 .video-wrapper.playing .video-play-btn {
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 }
 
 /* Swiper pagination (outside container) */
@@ -604,6 +615,10 @@ table {
 
   .testimonial-video-slider {
     padding: 0 50px;
+  }
+
+  .video-wrapper .video-thumbnail {
+    height: 300px;
   }
 
   .video-wrapper video {

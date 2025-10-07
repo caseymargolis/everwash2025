@@ -15,22 +15,52 @@ $(document).ready(function () {
   });
 
 
-  // Custom play button logic
+  // Custom play button logic - load video on click
   document.querySelectorAll('.video-wrapper').forEach(wrapper => {
-    const video = wrapper.querySelector('video');
     const playBtn = wrapper.querySelector('.video-play-btn');
+    const thumbnail = wrapper.querySelector('.video-thumbnail');
+    const videoSrc = wrapper.getAttribute('data-video-src');
 
     playBtn.addEventListener('click', () => {
-      video.play();
+      // Create video element
+      const video = document.createElement('video');
+      video.setAttribute('controls', '');
+      video.style.width = '100%';
+
+      // Set height based on screen size
+      if (window.innerWidth <= 768) {
+        video.style.height = '300px';
+      } else {
+        video.style.height = '500px';
+      }
+
+      video.style.objectFit = 'cover';
+      video.style.display = 'block';
+
+      // Create source element
+      const source = document.createElement('source');
+      source.setAttribute('src', videoSrc);
+      source.setAttribute('type', 'video/mp4');
+
+      video.appendChild(source);
+      wrapper.appendChild(video);
+
+      // Hide thumbnail and play button
       wrapper.classList.add('playing');
-    });
 
-    video.addEventListener('pause', () => {
-      wrapper.classList.remove('playing');
-    });
+      // Play the video
+      video.play();
 
-    video.addEventListener('ended', () => {
-      wrapper.classList.remove('playing');
+      // Handle pause/ended events
+      video.addEventListener('pause', () => {
+        // Optionally remove video and show thumbnail again
+        // For now, keep video player visible
+      });
+
+      video.addEventListener('ended', () => {
+        // Optionally remove video and show thumbnail again
+        // For now, keep video player visible
+      });
     });
   });
 
