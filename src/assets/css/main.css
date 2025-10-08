@@ -673,8 +673,7 @@ table {
 }
 
 .swiper-slide.feature-item {
-  width: auto;
-  max-width: none;
+  width: 100%;
 }
 
 .features .image-card {
@@ -686,23 +685,7 @@ table {
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-}
-
-/* Break out of container on desktop */
-@media (min-width: 992px) {
-  .features .col-lg-6:last-child {
-    padding-right: 0;
-  }
-
-  .features-carousel {
-    margin-right: calc(-50vw + 50%);
-    padding-right: 0;
-  }
-
-  .features .swiper {
-    overflow: visible;
-    padding-right: 100px;
-  }
+  margin: 0 auto;
 }
 
 .features .card-image {
@@ -870,14 +853,13 @@ table {
 
   .features-carousel {
     padding: 0;
-    overflow: visible;
-    margin-left: 0;
-    margin-right: calc(-100vw + 100% + 15px);
+    overflow: hidden;
+    margin: 0 auto;
   }
 
-  /* Allow slides to overflow on right side */
+  /* Contain slides properly */
   .features .swiper {
-    overflow: visible;
+    overflow: hidden;
   }
 
   .features .swiper-wrapper {
@@ -885,8 +867,7 @@ table {
   }
 
   .swiper-slide.feature-item {
-    width: 85vw;
-    max-width: 361px;
+    width: 100%;
   }
 
   .features-one-navigation,
