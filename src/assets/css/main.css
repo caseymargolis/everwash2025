@@ -690,7 +690,7 @@ table {
 /* Desktop: Allow overflow to show partial next slide on RIGHT only */
 @media (min-width: 992px) {
   .features .row {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .features .col-lg-6:first-child {
@@ -700,11 +700,11 @@ table {
 
   .features .col-lg-6:last-child {
     overflow: visible;
-    clip-path: inset(0px -100% 0px 0px);
   }
 
   .features-carousel {
     overflow: visible;
+    position: relative;
   }
 
   .features .swiper {
@@ -713,6 +713,13 @@ table {
 
   .features .swiper-wrapper {
     overflow: visible;
+  }
+
+  /* Keep navigation arrows visible */
+  .features-one-navigation,
+  .features-two-navigation {
+    position: absolute;
+    z-index: 20;
   }
 }
 
