@@ -687,10 +687,20 @@ table {
   cursor: pointer;
 }
 
-/* Desktop: Allow overflow to show partial next slide */
+/* Desktop: Allow overflow to show partial next slide on RIGHT only */
 @media (min-width: 992px) {
+  .features .row {
+    overflow: hidden;
+  }
+
+  .features .col-lg-6:first-child {
+    z-index: 10;
+    position: relative;
+  }
+
   .features .col-lg-6:last-child {
     overflow: visible;
+    clip-path: inset(0px -100% 0px 0px);
   }
 
   .features-carousel {
