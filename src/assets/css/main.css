@@ -673,7 +673,7 @@ table {
 }
 
 .swiper-slide.feature-item {
-  width: 100%;
+  width: 445px;
 }
 
 .features .image-card {
@@ -685,7 +685,25 @@ table {
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  margin: 0 auto;
+}
+
+/* Desktop: Allow overflow to show partial next slide */
+@media (min-width: 992px) {
+  .features .col-lg-6:last-child {
+    overflow: visible;
+  }
+
+  .features-carousel {
+    overflow: visible;
+  }
+
+  .features .swiper {
+    overflow: visible;
+  }
+
+  .features .swiper-wrapper {
+    overflow: visible;
+  }
 }
 
 .features .card-image {
@@ -849,6 +867,7 @@ table {
     width: 100%;
     max-width: 100%;
     height: 450px;
+    margin: 0 auto;
   }
 
   .features-carousel {
@@ -857,13 +876,13 @@ table {
     margin: 0 auto;
   }
 
-  /* Contain slides properly */
+  /* Contain slides properly on mobile */
   .features .swiper {
     overflow: hidden;
   }
 
   .features .swiper-wrapper {
-    overflow: visible;
+    overflow: hidden;
   }
 
   .swiper-slide.feature-item {

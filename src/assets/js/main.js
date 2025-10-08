@@ -119,9 +119,9 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      1200: { // desktop
-        slidesPerView: 1,
-        spaceBetween: 30,
+      992: { // desktop - show partial next slide
+        slidesPerView: 1.6,
+        spaceBetween: 24,
       },
     },
   });
@@ -152,9 +152,9 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      1200: { // desktop
-        slidesPerView: 1,
-        spaceBetween: 30,
+      992: { // desktop - show partial next slide
+        slidesPerView: 1.6,
+        spaceBetween: 24,
       },
     },
   });
