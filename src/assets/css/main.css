@@ -1134,10 +1134,14 @@ table {
   }
 
   .proof-overlay .proof-content .proof-icon {
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .proof-overlay .proof-content .proof-icon img {
+    display: block;
     margin: 0 auto;
     width: 57px;
     height: 57px;
