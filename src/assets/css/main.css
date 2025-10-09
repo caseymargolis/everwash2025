@@ -1118,42 +1118,35 @@ table {
     margin: 0 auto;
   }
 
-  /* Overlay */
+  /* Overlay - Always visible on mobile */
   .proof-overlay {
     position: absolute;
     inset: 0;
     border-radius: var(--border-radius);
     background: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.4s ease;
-  }
-
-  .proof-item:hover .proof-overlay {
-    opacity: 1;
-    visibility: visible;
   }
 
   /* Overlay Content */
-  .proof-content {
+  .proof-overlay .proof-text {
     text-align: center;
     color: var(--color-white);
     padding: 20px;
-    transition: transform 0.4s ease;
   }
 
-  .proof-content .proof-icon {
+  .proof-overlay .proof-text .proof-image {
     margin-bottom: 10px;
   }
 
-  .proof-content .proof-icon img {
+  .proof-overlay .proof-text .proof-image img {
     margin: 0 auto;
   }
 
-  .proof-content .proof-number {
+  .proof-overlay .proof-text .proof-number {
     font-size: 60px;
     font-weight: 700;
     color: var(--color-secondary);
@@ -1161,13 +1154,13 @@ table {
     line-height: 1;
   }
 
-  .proof-content .proof-caption {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.4;
-    max-width: 300px;
-    margin: 12px auto 0;
-    color: rgba(255, 255, 255, 0.9);
+  .proof-overlay .proof-text .proof-caption {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 313px;
+    margin: 20px auto 0;
+    color: var(--color-white);
   }
 
   /* Swiper Pagination Dots - 4 dots for mobile proof section */
