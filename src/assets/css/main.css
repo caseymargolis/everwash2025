@@ -1100,22 +1100,14 @@ table {
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
-    transition: transform 0.4s ease;
-  }
-
-  .proof-item:hover {
-    transform: translateY(-5px);
-  }
-
-  .proof-mobile .proof-item {
-    padding: 0;
-  }
-
-  .proof-item .proof-image img {
-    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 438px;
     height: auto;
-    border-radius: var(--border-radius);
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Overlay - Always visible on mobile */
@@ -1133,24 +1125,24 @@ table {
   }
 
   /* Overlay Content */
-  .proof-overlay .proof-text {
+  .proof-overlay .proof-content {
     text-align: center;
     color: var(--color-white);
     padding: 0;
     width: 100%;
   }
 
-  .proof-overlay .proof-text .proof-image {
+  .proof-overlay .proof-content .proof-icon {
     margin-bottom: 20px;
   }
 
-  .proof-overlay .proof-text .proof-image img {
+  .proof-overlay .proof-content .proof-icon img {
     margin: 0 auto;
     width: 57px;
     height: 57px;
   }
 
-  .proof-overlay .proof-text .proof-number {
+  .proof-overlay .proof-content .proof-number {
     font-size: 60px;
     font-weight: 700;
     color: var(--color-secondary);
@@ -1158,7 +1150,7 @@ table {
     line-height: 1;
   }
 
-  .proof-overlay .proof-text .proof-caption {
+  .proof-overlay .proof-content .proof-caption {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.3;
