@@ -1125,12 +1125,16 @@ table {
     padding: 60px 24px;
   }
 
-  /* Overlay Content */
+  /* Overlay Content - All centered */
   .proof-overlay .proof-content {
     text-align: center;
     color: var(--color-white);
     padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .proof-overlay .proof-content .proof-icon {
@@ -1151,8 +1155,9 @@ table {
     font-size: 60px;
     font-weight: 700;
     color: var(--color-secondary);
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px;
     line-height: 1;
+    text-align: center;
   }
 
   .proof-overlay .proof-content .proof-caption {
@@ -1162,6 +1167,7 @@ table {
     max-width: 313px;
     margin: 0 auto;
     color: var(--color-white);
+    text-align: center;
   }
 
   /* Swiper Pagination Dots - 4 dots for mobile proof section */
