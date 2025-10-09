@@ -1183,9 +1183,14 @@ table {
     transform: scale(1.2);
   }
 
+  /* Navigation Arrows - Centered on slide */
+  .proof-mobile-navigation {
+    position: relative;
+    height: 0;
+  }
+
   .proof-mobile-navigation .swiper-button-prev.custom-arrow,
   .proof-mobile-navigation .swiper-button-next.custom-arrow {
-    color: var(--color-black);
     background: var(--color-secondary);
     border-radius: 50%;
     width: 42px;
@@ -1194,9 +1199,24 @@ table {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-top: 0;
+    margin-top: -220px;
+    z-index: 10;
+  }
+
+  .proof-mobile-navigation .swiper-button-prev.custom-arrow {
+    left: 10px;
+  }
+
+  .proof-mobile-navigation .swiper-button-next.custom-arrow {
+    right: 10px;
+  }
+
+  .proof-mobile-navigation .swiper-button-prev.custom-arrow svg path,
+  .proof-mobile-navigation .swiper-button-next.custom-arrow svg path {
+    fill: var(--color-primary);
   }
 
   /* Hide default Swiper arrow text */
