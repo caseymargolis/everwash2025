@@ -671,7 +671,27 @@ table {
   max-width: 100%;
 }
 
+/* Scale padding as screen gets smaller */
+@media (max-width: 1400px) {
+  .features-wrapper {
+    padding-left: 14%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .features-wrapper {
+    padding-left: 12%;
+  }
+}
+
 @media (max-width: 991px) {
+  .features-wrapper {
+    padding-left: 8%;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
   .features-wrapper {
     padding-left: 15px;
     padding-right: 15px;
