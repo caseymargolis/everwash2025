@@ -665,6 +665,19 @@ table {
   overflow: hidden;
 }
 
+.features-wrapper {
+  padding-left: 16%;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .features-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .features .section-description {
   font-size: 18px;
   max-width: 465px;
