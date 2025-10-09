@@ -943,10 +943,6 @@ table {
     overflow: hidden;
   }
 
-  .features .swiper-wrapper {
-    overflow: hidden;
-  }
-
   .swiper-slide.feature-item {
     width: 100%;
   }
@@ -1660,3 +1656,4 @@ table {
 .pt-20 {
   margin-top: 25px;
 }
+
