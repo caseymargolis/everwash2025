@@ -160,10 +160,10 @@ $(document).ready(function () {
   });
 
   var proofMobileSwiper = new Swiper(".proofSwiper", {
-    slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 16,
     loop: false,
-    centeredSlides: false,
+    centeredSlides: true,
     navigation: {
       nextEl: '.proof-mobile-navigation .swiper-button-next',
       prevEl: '.proof-mobile-navigation .swiper-button-prev',
